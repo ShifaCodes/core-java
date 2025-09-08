@@ -1,5 +1,4 @@
 package com.shifa;
-
 public class Primitives {
     public static void main(String[] args) {
         int rollno = 64;
