@@ -11,13 +11,27 @@ public class Largest {
         int c = in.nextInt();
 
         //Q: Find the largest of the 3 numbers
-        int max = a;
-        if (b > max) {
-            max = b;
-        }
-        if (c > max) {
-            max = c;
-        }
+//        int max = a;
+//        if (b > max) {
+//            max = b;
+//        }
+//        if (c > max) {
+//            max = c;
+//        }
+
+        // Another way of solving this question
+//           int max = 0;
+//           if (a > b) {
+//               max = a;
+//           } else {
+//               max = b;
+//
+//           } if (c > max) {
+//              max = c;
+//        }
+
+        //Finding largest number through math.max call
+          int max = Math.max(c, Math.max(a,b));
         System.out.println(max);
     }
 }
