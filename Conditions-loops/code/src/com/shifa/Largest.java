@@ -32,6 +32,7 @@ public class Largest {
 
         //Finding largest number through math.max call
           int max = Math.max(c, Math.max(a,b));
-        System.out.println(max);
+
+         System.out.println(max);
     }
 }
