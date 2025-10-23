@@ -1,20 +1,23 @@
 package com.shifa;
 
+
 import java.util.Scanner;
 
 public class Questions {
-    public static boolean main(String[] args) {
+    public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        int n = in.nextInt();
-      //  boolean ans = isPrime(n);
-       // System.out.println(ans);
+    //    int n = in.nextInt();
+//        boolean ans = isPrime(n);
+//        System.out.println(isPrime(n));
 
         for (int i = 100; i < 1000; i++) {
-            if (isArmstong(i)) {
+            if (isArmstrong(i)) {
                 System.out.print(i + " ");
+            }
+            
         }
     }
-    //print all the 3 digit armstrong numbers
+    //print all the 3 digits armstrong number
     static boolean isArmstrong(int n) {
         int original = n;
         int sum = 0;
@@ -24,15 +27,9 @@ public class Questions {
             n = n / 10;
             sum = sum + rem*rem*rem;
         }
-        if (sum == original) {
-            return true;
-        }
-        return false;
-
-
-
-
+        return sum == original;
     }
+
 
 
 
@@ -47,10 +44,6 @@ public class Questions {
             }
             c++;
         }
-        if (c * c > n) {
-            return true;
-        }
-        return false;
-
+        return c * c > n;
     }
 }
