@@ -38,5 +38,9 @@ public class Input {
                   str[i] = in.next();
                 }
         System.out.println(Arrays.toString(str));
+                //modify
+        str[1] = "Shifa";
+
+        System.out.println(Arrays.toString(str));
     }
 }
