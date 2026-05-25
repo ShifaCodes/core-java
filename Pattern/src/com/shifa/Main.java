@@ -2,14 +2,16 @@ package com.shifa;
 
 public class Main {
     public static void main(String[] args) {
-
+    pattern31(4);
     }
 
     static void pattern31(int n) {
-        for (int row = 0; row < 2 * n - 1; row++) {
-            for (int col = 0; col < 2 * n - 1; col++) {
-                int atEveryIndex = 4567;
-                System.out.print();
+        int originalN = n;
+        n = 2 * n;
+        for (int row = 0; row <= n; row++) {
+            for (int col = 0; col <= n; col++) {
+                int atEveryIndex = originalN - Math.min(Math.min(row, col), Math.min(n - row, n - col));
+                System.out.print(atEveryIndex + " ");
             }
             System.out.println();
         }
